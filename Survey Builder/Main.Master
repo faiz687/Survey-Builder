@@ -1,0 +1,100 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Main.Master.vb" Inherits="Survey_Builder.MainMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link href="StyleSheet/SurveyStyleSheet.css" rel="stylesheet" />
+    <title>Survey Builder</title>
+    <link rel="shortcut icon" type="image/jpg" href="/Images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JavaScript/JavaScript.js"></script>
+    <script src="https://kit.fontawesome.com/1dca77ecd5.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" id="SurveyBuilderBody"  onresize="ShowRadGridColumn()">
+    <form id="form1" runat="server" defaultbutton="FormBlockButton" >    
+        <script src="JavaScript/notify.js"></script>       
+        <div>           
+            <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnablePageMethods="true">
+                <Scripts>
+                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+                </Scripts>
+            </telerik:RadScriptManager>        
+            <main class="MainContainer">
+                <div class="MainContentContainer">
+                    <header class="Header">
+                        <section>
+                            <div class="NhsLogo">
+                                <asp:Image ID="NhsLogoImage" runat="server" ImageUrl="/Images/NhsLogo.png" />
+                            </div>
+                        </section>
+                        <section class="SubHeaderSection">
+                            <div class="LoginLabelDiv" id="LoginLabelDiv" runat="server">
+                                <telerik:RadLabel ID="WelcomeNameLabel" runat="server" Text="Login in to your account"></telerik:RadLabel>
+                            </div>
+                        </section>
+                    </header>
+                    <section>
+                        <asp:HiddenField ID="MenuButtonPressed" runat="server" />
+                        <nav id="Nav1" class="NavigationBarDiv1" runat="server">
+                            <section class="NavigationBarSection" id="NavigationBarSection" runat="server">
+                                <telerik:RadImageButton ID="UserAccountsButton" CssClass="NavigationButton ButtonClassHovered" OnClick="UserAccountsButton_Click" runat="server" style="margin-top:0px;" Text="User Accounts">
+                                    <ContentTemplate>
+                                        <i class="fas fa-user-circle"></i>User Accounts
+                                    </ContentTemplate>
+                                </telerik:RadImageButton>
+                                <telerik:RadImageButton ID="SurveysButton" CssClass="NavigationButton ButtonClassHovered" OnClick="SurveysButton_Click" runat="server" Text="Surveys">
+                                    <ContentTemplate>
+                                        <i class="fas fa-poll-h"></i>Surveys
+                                    </ContentTemplate>
+                                </telerik:RadImageButton>
+                                <telerik:RadImageButton ID="PinManagementButton" CssClass="NavigationButton ButtonClassHovered" OnClick="PinManagementButton_Click" runat="server" Text="Pin Management">
+                                    <ContentTemplate>
+                                        <i class="fas fa-key"></i>Pin Management
+                                    </ContentTemplate>
+                                </telerik:RadImageButton>
+                                <telerik:RadImageButton ID="LogoutButton" CssClass="NavigationButton ButtonClassHovered" OnClick="LogoutButton_Click" runat="server" Text="Logout">
+                                    <ContentTemplate>
+                                        <i class="fas fa-sign-out-alt"></i>Logout
+                                    </ContentTemplate>
+                                </telerik:RadImageButton>
+                                <telerik:RadImageButton ID="HamburgerMenuIocon" CssClass="HamburgerMenuIcon ButtonClassHovered" runat="server" OnClientClicked="MinimizeOrExpandNavigation" AutoPostBack="false">
+                                    <ContentTemplate>
+                                        <i class="fas fa-bars"></i>
+                                    </ContentTemplate>
+                                </telerik:RadImageButton>
+                            </section>
+                        </nav>
+                        <section class="contentSection">
+                            <asp:UpdatePanel ID="MasterPanel" runat="server" ChildrenAsTriggers="false"  UpdateMode="Conditional" >
+                                <ContentTemplate>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                                    </asp:ContentPlaceHolder>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </section>
+                    </section>
+                </div>
+            </main>
+            <footer class="Footer">
+                <section class="FooterSection">
+                    <div>
+                        <telerik:RadLabel ID="CWPTLabel" CssClass="RadLabel" runat="server" Text="Coventry & Warwickshire Partnership </br> NHS Trust © 2020"></telerik:RadLabel>
+                    </div>
+                    <div class="VersionDiv">
+                        <telerik:RadLabel ID="VersionLabel" CssClass="RadLabel" runat="server" ></telerik:RadLabel>
+                    </div>
+                </section>
+            </footer>
+        </div>
+        <%--        removing this button will cause main form to be submitted when we press enter on any of the  pages--%>
+        <asp:Button ID="FormBlockButton" runat="server" Style="display: none; visibility: hidden;" />
+    </form>
+</body>
+</html>

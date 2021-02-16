@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+             xmlns:CodeBehing="clr-namespace:SurveyBuilderApp.AppPagesCodeBehind"
+             mc:Ignorable="d"             
+             x:Class="SurveyBuilderApp.AppPages.VersionCheckPage">
+    <ContentPage.BindingContext>
+        <CodeBehing:VersionCheckPage></CodeBehing:VersionCheckPage>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#edeeee">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="8*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+                    <Label x:Name="VersionMessageLabel"  VerticalOptions="CenterAndExpand"  CharacterSpacing="1" IsVisible="{Binding VersionMessageLabel}" Margin="20,0"  HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"  Text="There is a new version of the App. Please update it through the App Catalog."></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="1"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <StackLayout  HeightRequest="130">
+                        <Image x:Name="AppIconImage" Source="AppIconVersionCheck" IsVisible="{Binding AppIconImage}" ></Image>
+                    </StackLayout>
+                    <ActivityIndicator  x:Name="ActivityIndicatorVersionCheck" Color="#005eb8"  Margin="0,20" IsVisible="{Binding IsLoading}"  IsRunning="{Binding IsLoading}" />
+                    <Label Text="{Binding ActivityStatus}"  FontSize="Medium" TextColor="#005eb8" FontAttributes="Bold" CharacterSpacing="1" IsVisible="{Binding IsLoading}" HorizontalOptions="CenterAndExpand" ></Label>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

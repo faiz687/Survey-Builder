@@ -1,0 +1,762 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif !important;
+}
+.RadButton_Bootstrap{
+    font-family:inherit !important;
+}
+/*All Rad Labels on site*/
+.RadLabel {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: larger;
+    font-weight: 500;
+}
+/*All buttons on Site*/
+.SurveyBuilderButton {
+    border-style: none !important;
+    border: none;
+    color: white !important;
+    width: initial !important;
+    background-color: #1a73e8 !important;
+    outline: none;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.SurveyBuilderButtonHover:hover {
+    background-color: #005fff !important;
+    color: white;
+}
+.SurveyBuilderIconButton i{
+    padding:5px;
+
+}
+.SaveButtonHover:hover {
+    background-color: #3fd63f !important;
+}
+
+.NoScrollBody body{
+    overflow:hidden ;
+}
+/*Main Container Settings*/
+.MainContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+    .MainContainer .MainContentContainer {
+        padding-bottom: 70px;
+    }
+
+@media only screen and (max-width: 750px) {
+    .MainContainer .MainContentContainer {
+        padding-bottom: 250px;
+    }
+}
+/*Header Section*/
+header {
+    background-color: #76abef;
+}
+
+    header section .NhsLogo {
+        text-align: right;
+        padding: 10px;
+        max-width: 1600px;
+        margin: 0px auto;
+    }
+
+    header section #NhsLogoImage {
+        width: 220px;
+    }
+
+.SubHeaderSection {
+    background-color: #005eb8;
+}
+
+    .SubHeaderSection .LoginLabelDiv {
+        margin: 0px auto;
+        max-width:1600px;
+        text-align: center;
+        height: 3em;
+    }
+
+        .SubHeaderSection .LoginLabelDiv .RadLabel {
+            letter-spacing:1px;
+            margin-top: 10px;
+            color: white;
+        }
+/*Navigation Bar*/
+.NavigationBarDiv1 {
+    float:left;
+    width: 15em;
+}
+    .NavigationBarDiv1 .RadButton {
+        font-size: larger;
+        box-shadow: none !important;
+        padding: 10px !important;
+        border: none;
+        padding-left: 20px !important;
+        text-align: left;
+        border-bottom-right-radius: 50px !important;
+        border-top-right-radius: 50px !important;
+    }
+.ButtonClassHovered:hover  {
+    background-color: #0000000a ;
+    color: #1967d2 !important;
+}
+.MenuButtonPressedCss {
+    background-color: #e8f0fe !important;
+    color: #1967d2 !important;
+}
+
+.ActivatedButton {
+    padding-left: 40px !important;
+    background-color: #0000000a;
+    color: #1967d2 !important;
+}
+
+    .NavigationButtonActivated {
+        background-color: #e8f0fe !important;
+        color: #1967d2 !important;
+    }
+
+.NavigationBarDiv1 .RadButton i {
+    margin-right: 10px;
+}
+.HamburgerMenuIcon {
+    display: none !important;
+}
+@media only screen and (max-width: 750px) {
+    .NavigationBarDiv1 {
+        float: initial;
+    }
+
+    .NavigationButton {
+        display: none !important;
+    }
+
+    .HamburgerMenuIcon {
+        display: block !important;
+    }
+
+    .DropMenu {
+        display: inline-block !important;
+    }
+}
+/*Footer Section*/
+footer {
+    background-color: #76abef;
+    width: 100%;
+    bottom: 0;
+    height: 75px;
+}
+
+.FooterSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin:0px auto;
+}
+
+    .FooterSection > div {
+        padding: 10px;
+        line-height: 20px;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    .FooterSection .VersionDiv {
+        text-align: right;
+    }
+
+.FooterSection a {
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+        .FooterSection a:hover {
+            text-decoration: underline;
+        }
+
+@media only screen and (max-width: 750px) {
+    footer {
+        height: 130px;
+    }
+
+    .FooterSection a {
+        margin: 0px;
+    }
+}
+/*Message Box*/
+#MessageBox {
+    border: 2px solid red;
+    margin-left: 5px;
+    padding: 20px;
+    max-width: 20%;
+    background-color: black;
+}
+    /*All Content Pages */
+    .CurrentPageMainBody {
+        padding: 20px;
+    }
+
+    .CurrentPageMainBody section {
+        margin: 10px;
+        border-radius: 8px;
+        border: 1px solid #dadce0;
+        padding: 10px;
+    }
+/*Login Page*/
+.loginPageContainer .LoginWrapperDiv {
+    box-shadow: 0px 0px 71px -35px rgba(0,0,0,0.75);
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #edeeee;
+    margin: 90px auto;
+    background-color: #edeeee;
+    padding: 10px;
+    width: 23em;
+}
+.LoginValidatorDiv {
+    padding: 10px;
+}
+.loginPageContainer .LoginWrapperDiv:hover {
+    box-shadow: 0px 0px 71px -24px rgba(0,0,0,0.75);
+}
+
+    .loginPageContainer .LoginWrapperDiv > div .RadInput, .RadButton {
+        display: block;
+        width: 100%
+    }
+.IconTextBox {
+    position: relative;
+}
+.ClearButton {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    position: absolute !important;
+    top: 7px;
+    width: fit-content;
+    right: 8px;
+    box-shadow: none !important;
+}
+.PasswordEyeButton {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    position: absolute !important;
+    top: 7px;
+    width: fit-content;
+    right: 8px;
+    box-shadow: none !important;
+}
+.UserNamLabelIconDiv, .PasswordLabelIconDiv {
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.LoginButtonLockedLabel {
+    text-align: center;
+}
+/*ContenPageContainer*/
+.contentSection {
+    overflow: auto;
+    max-width: 1371px;
+    margin: 0px auto;
+}
+/*All 4  Pages (User Accounts ,  Surveys , Pin Management , Logout)*/
+.ContentsMainBody {
+    overflow: auto;
+    margin-top: 2em;
+    padding: 10px;
+}
+    .ContentsMainBody section {
+        float: left;
+        margin: 10px;
+        border: 1px solid #dadce0;
+        width: 35%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+        .ContentsMainBody section * {
+            padding: 10px;
+        }
+
+.ContentsMainBody a{
+    text-decoration:none;
+}
+.SecondContentBox {
+    padding: 7px !important;
+}
+.DescriptionLabelsCssclass {
+    display: block !important;
+    border-top: 1px solid #dadce0;
+    color: #1a73e8 !important;
+    font-size: medium;
+}
+.ContentBoxHeaders {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.HeaderLabelCss {
+    font-weight: 400;
+    color: #202124;
+    margin-top: 26px;
+    font-size: larger;
+}
+@media only screen and (max-width: 1100px) {
+    .ContentsMainBody section {
+        margin:15px auto;
+        float: none;
+        width: initial;
+    }
+}
+/*Pin Management Page*/
+.PinBox {
+    width: 70% !important;
+}
+.SurveyDropDownMenu{
+    padding:0px;
+    width:90% !important;
+}
+    .SurveyDropDownMenu .rddlFakeInput{
+        padding:0px;
+    }
+
+    span.p-icon.p-i-arrow-60-down, span.rddlFakeInput.rddlDefaultMessage {
+        padding: 0px;
+    }
+.GeneratePin{
+    border:none;
+}
+.PinTextBox{
+    width:20em !important;
+}
+.PinTextBoxOuter{
+    padding: 10px 0px !important;
+}
+@media only screen and (max-width: 900px) {
+    .PinBoxHeader {
+        text-align:center;
+        display:block;
+    }
+}
+/*Add or edit user Page*/
+.AddOrEditButtons {
+    border-style: none !important;
+    border: none;
+    color: white !important;
+    width: initial;
+    background-color: #1a73e8 !important;
+    outline: none;
+}
+.AddOrEditButtonsHover:hover {
+    background-color: #006eff !important;
+    color: white;
+}
+
+.AddOrEditMainBody i {
+    padding: 5px;
+}
+
+.EditDetailsButton {
+    background-color: transparent !important;
+    border-style: none;
+    border: none !important;
+}
+
+.EditDetailsButtonHovered:focus{
+    outline:none !important;
+    box-shadow:none !important;
+}
+
+/*.AddOrEditMainBody {
+    padding: 20px;
+}
+
+    .AddOrEditMainBody section {
+        margin: 10px;
+        border-radius: 8px;
+        border: 1px solid #dadce0;
+        padding: 10px;
+    }*/
+.AddUserSection {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+.SearchUsersDiv {
+        margin-bottom: 10px;
+    }
+
+@media only screen and (max-width: 588px) {
+    .SearchButton {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .NavigationBarDiv1 {
+        float: initial;
+    }
+
+}
+/*Edit Users Page*/
+.EditUserBody {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.EditUserBodyLabelCss {
+    padding: 5px;
+    display: block !important;
+}
+
+.EditUserBodyTextBoxWrapper {
+    width: 100% !important;
+    padding: 5px;
+}
+
+.EditUserBodyDropDown {
+    width: 100% !important;
+}
+
+/*DeletePage*/
+.DeleteButton {
+    background-color: #fe6464 !important;
+}
+
+.DeleteButtonHovered:hover {
+    background-color: #ff3939 !important
+}
+.DeleteConfirmationPadding {
+    padding: 0px !important;
+}
+
+.DeleteConfirmationHeader {
+    background-color: whitesmoke;
+}
+
+.DeleteConfirmationBody {
+    padding: 10px;
+}
+/*Add User Page*/
+.RadPageLayout{
+    width:100% !important;
+}
+.DarkWhiteRow{
+    background-color:whitesmoke;
+}
+.AllRowCss {
+    border: 1px solid #d9d9d9;
+
+    padding:10px;
+}
+.SaveButton {
+    margin-top: 10px;
+    background-color: #1dc04b !important;
+}
+/*Overlay Page*/
+.OverlayPage {
+    margin:0px !important;
+    border-radius:0px !important;
+    position: fixed;
+    width: 100% !important;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6b787fdb;
+    z-index: 2;
+}
+.OverlaySecion {
+    margin: 225px auto;
+    background-color: white;
+    width: 40em;
+    margin: 225px auto;
+    background-color: white;
+}
+.NoPadding  {
+    padding:0px !important;
+}
+.OverlayHeader {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.SurveyValidator {
+    margin-left: 14px;
+}
+
+.OverlayBody .rddlFakeInput {
+    padding: 0px !important;
+}
+/*Survey Designing Page*/
+.ResponsesTextBox
+
+
+.LabelTextBox {
+    display: inline;
+}
+.SurveyHeaderDiv {
+    padding: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+    .SurveyHeaderDiv div:nth-child(2) {
+        float: right;
+    }
+.SurveySaveCancelDiv {
+    margin-top: 10px;
+}
+.SurveyNameEdit {
+    display: none !important;
+}
+.SurveyHeaderDiv:hover {
+    background-color: rgba(0,0,0,0.10);
+    transition: background-color 500ms ease-out;
+}
+
+.SurveyDesigningDiv > div {
+    margin: 0 0 40px 0;
+}
+
+.IndividualQuestionPanel {
+
+    margin:15px 0px;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.MoveUpDiv, .MoveDownDiv {
+    visibility:hidden;
+    float: right;
+}
+    .MoveUpDiv button {
+        width: 132px;
+    }
+.MoveDownDiv button i, .MoveUpDiv button i {
+    padding: 0px 10px 0px 0px;
+
+}
+.QuestionNumberLabel::after {
+    content: ".";
+}
+.QuestionHeader {
+    padding: 0 0 24px 0;
+    margin: 0 0 3px 0;
+}
+.RadRadioButtonList button, .RadCheckBoxList button {
+    text-align: left;
+    padding:10px !important;
+}
+.IndividualQuestionPanelhover:hover {
+    background-color: rgba(0,0,0,0.10);
+    transition: background-color 500ms ease-out;
+}
+button.RadCheckBox  , button.RadRadioButton {
+    font-size: 20px;
+}
+.RadButton.RadCheckBox .rbIcon, .RadButton.RadCheckBox .rbIcon::before, .RadButton.RadRadioButton .rbIcon, .RadButton.RadRadioButton .rbIcon::before {
+    font-size: inherit;
+    width: 1em;
+    height: 1em;
+}
+.NewQuestionSection {
+    border-radius:5px;
+    background-color:#f4f5f5;
+}
+.NewQuestionSection .RadLabel {
+    font-weight:normal;
+}
+.OptionsDiv {
+    margin:0px 10px;
+    padding: 10px;
+    border-top: 1px solid #d0d2d3;
+}
+.ResponsesTextBox {
+    font-size: larger;
+}
+.SingleTextBox{
+    padding : 5px;
+}
+.QuestionMandatory::after{
+    content:" *";
+    color:red;
+}
+.NewQuesitonBodyDiv {
+    padding: 10px;
+}
+.NewQuesitonHeaderDiv{
+    float:right;
+    margin:10px;
+}
+.NewQuestionTextBox {
+    margin-left: 11px !important;
+}
+.MandatoryQuestionCheck {
+    display:block;
+    width:fit-content; 
+    margin-left:10px;
+    margin-top: 10px;
+}
+.QuestionDescriptionLabel {
+    display: block !important;
+    margin-left: 26px;
+    font-weight: 100;
+}
+.AnswerChoiceAddDeleteButton {
+    width: fit-content;
+    padding-right: 0px !important;
+}
+.OptionsPanel div {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.AnswerChoiceTextBox {
+    font-size:medium;
+    width: 84%;
+    padding:10px;
+}
+    .AnswerChoiceTextBox:focus {
+        outline-color: #3c87c8;
+    }
+    .AnswerChoiceButton {
+        margin-left: 10px;
+        outline: none;
+        border-radius: 50%;
+        border: none;
+        padding: 11px;
+    }
+.AnswerChoiceButtonHover:hover {
+    background-color: #d8d8d8;
+}
+.SliderRangeOptions div {
+    display: inline-block;
+    margin-right: 53px;
+}
+.ResponsesControlPanel {
+    width:100%;
+}
+.SliderNumericalTextBoxOuter {
+    float: right;
+    display: inline-block;
+    margin: 10px 0px;
+    margin-right: calc(100% - 870px);
+}
+.SliderNumericalTextBox {
+    background-color: #0000001a;
+}
+.SliderCssClass {
+    display: inline-block;
+}
+.rslLargeTickLast span {
+    width: 30px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .MoveUpDiv, .MoveDownDiv {
+        margin: 10px 0px;
+        float: initial;
+    }
+    .MoveDownDiv button{
+        width:fit-content;
+    }
+
+    .ResponsesControlPanel textarea  {
+        width: 23em !important;
+    }
+    .ResponsesControlPanel input{
+        width:18em !important;
+    }
+    .NewQuesitonHeaderDiv {
+        float: initial;
+    }
+    .ControlComboBoxCss{
+        width:100% !important;
+        display:block !important;
+    }
+    .NewQuestionTextBox {
+       width:87% !important;
+    }
+    .MandatoryQuestionCheck {
+        margin-left: 0px;
+
+    }
+    .AnswerChoiceTextBox {
+        width: 70% !important;
+    }
+
+}
+/*ViewAllSurveysPage*/
+.IndividualSurveyPanelHover:hover {
+    border: 1px solid #1a73e8;
+}
+
+.IndividualSurveyPanel {
+    padding: 10px;
+    margin: 15px 0px;
+    border: 1px solid #EFEFEF;
+}
+.SurveyNamelabelCss {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333e48 !important;
+}
+.SurveyDateLabelCss {
+    font-size: 13px;
+    color: #6B787F !important;
+    padding-right: 0px !important;
+}
+.EditSurveyButtonCss{
+    width:40%;
+}
+.SurveyOptionsPanel2{
+    margin-top:8px;
+    display:flex;
+    flex-flow:row;
+    justify-content:space-between;
+}
+.SurveyDetailsDiv {
+    font-size: 13px;
+    font-weight: 400;
+    border-left: 1px solid #D0D2D3;
+    text-align: center;
+    width: 33.3%;
+}
+.RedBorder  .rddlInner{
+   border-color:red !important;
+}
+.GreenBorder .rddlInner {
+    border-color: #00dc00 !important;
+}
+.StatusDropDownListCssItem {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1250px) {
+    .DateDiv{
+        display:none;
+    }
+    .SurveyNamelabelCss{
+        margin-top:21px;
+    }
+    .SurveyDetailsDiv {
+        border:initial;
+    }
+}
+/* All Surveys Page*/
+span#ctl00_ContentPlaceHolder1_SurveyNameComboBox_Arrow::before {
+    content: "\f002";
+    font-family: FontAwesome;
+}

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SurveyBuilderApp.AppPages.PinManagementPage"
+             Title="Keys"
+             IconImageSource="KeyIcon"
+             ControlTemplate="{StaticResource HeaderAndBody}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10" VerticalOptions="CenterAndExpand" >
+                <Frame>
+                    <StackLayout x:Name="MainStackLayout">
+                        <StackLayout x:Name="PinPickerLayout" IsVisible="true">
+                            <Picker x:Name="SurveyPicker" Title="Select a survey" TitleColor="#005eb8"   FontSize="Medium" HeightRequest="45" BackgroundColor="WhiteSmoke" ItemDisplayBinding="{Binding SurveyName}">
+                            </Picker>
+                            <Button x:Name="GenerateButton"  Clicked="GenerateButton_Clicked_1" Text="Generate Pin" TextColor="White" FontSize="Large" Margin="0,10,0,0" >
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="#005eb8" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="#0158ab" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </Button>
+                            <Label x:Name="PinLabel" IsVisible="false"   Padding="10" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand" FontSize="Large" FontAttributes="Bold" CharacterSpacing="1"/>
+                        </StackLayout>
+                        <StackLayout x:Name="PinActivityIndicator" IsVisible="false">
+                            <ActivityIndicator Color="#005eb8" IsRunning="True"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
