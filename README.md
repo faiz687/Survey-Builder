@@ -30,7 +30,7 @@ C#, VB.net, Html Css and Javascript, SQL.
 ## Demo
 
 ###### **Login Page**
-![](Images/LoginPage.png =250x)
+![](Images/LoginPage.png width=250px)
 
 
 
