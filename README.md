@@ -32,21 +32,83 @@ C#, VB.net, Html Css and Javascript, SQL.
 ###### **Login Page**
 ![](Images/LoginPage.png)
 
+#
 
 ###### **Home Page**
 ![](Images/HomePage.png)
 
+#
+
 ###### **Adding and Editing Users**
 ![](Images/UsersPage.png)
+
+#
 
 ###### **Individual Survey Page**
 ###### **Question, Question Description, Mandatory Check, and Different Responses**
 ![](Images/DifferentControls.png)
 
+#
 
+###### **Different Control options for each Question**
+![](Images/DifferentControlOptions.png)
 
+#
 
+###### **Editing Survey Page**
+![](Images/EditSurveys.png)
 
+#
 
+###### **Filtering Survey**
+![](Images/FilteringSurvey.png)
 
+#
 
+###### **Multiple responses can be added for each question**
+![](Images/MultipleResponses.png)
+
+#
+
+###### **Slider options with labels or number values**
+![](Images/SliderOptions.png)
+
+#
+
+###### **Mandatory Question highlighted if not complete before submitting**
+![](Images/MandatoryQuestionCheck.png)
+
+#
+
+###### **Survey mobile icon**
+![](Images/AppsIcon.png)
+
+#
+
+###### **Launch Screen**
+![](Images/LaunchPage.png)
+
+#
+
+###### **Home Screen**
+![](Images/HomePageM.png)
+
+#
+
+###### **Filtering Survey**
+![](Images/FilterSurveyM.png)
+
+#
+
+###### **Question, Responses**
+![](Images/DiferentQuestionView.png)
+
+#
+
+###### **Generating Pin for Survey**
+![](Images/GeneratePin1.png)
+
+#
+
+###### **Generated Pin for a Survey**
+![](Images/GeneratePin.png)
